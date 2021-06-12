@@ -51,4 +51,4 @@ x_predict = x_mean + (y-y_mean).*xy_var./y_var;
 
 The errors are plotted on a histogram which shows the error distribution to be gaussian. The figure is as follows: 
 
-![](E:\HU repository\Summers 2021\Object Tracking\Simulations\Gaussian-observation-and-noise-LMSE-Estimator\histogram.jpg)
+![](histogram.jpg)
