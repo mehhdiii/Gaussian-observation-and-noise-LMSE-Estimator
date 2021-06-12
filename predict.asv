@@ -1,0 +1,22 @@
+function x_predict = predict(y, y_mean, x_mean, v_mean, y_var, x_var, v_var, xy_var)
+%Function predicts x given information about noise and observed RV v and y
+%respectively. 
+%   (y
+%, y_mean,
+%x_mean, 
+%v_mean, 
+%y_var, 
+%x_var, 
+%v_var, xy_var
+
+
+
+%Estimate x: 
+x_predict = x_mean + (y-y_mean).*xy_var./var_y
+
+
+
+
+
+end
+
