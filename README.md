@@ -8,6 +8,18 @@ If the original signal X and the Noise V added to it both are Gaussian, then the
 | V (Noise)           | Yes  | Yes      | No       |
 | Y (Observed signal) | No   | No       | Yes      |
 
+### Observed Variable: 
+
+The observed variable y is defined as follows: 
+
+```matlab
+y = aX + bV
+```
+
+where, a and b are constants. 
+
+## Preliminary calculations:
+
 The mean and variance of the observed variable y is calculated as follows: 
 
 #### Mean
@@ -39,7 +51,7 @@ Hence the updated set of information becomes:
 | V (Noise)           | Yes  | Yes      | No       |
 | Y (Observed signal) | Yes  | Yes      | Yes      |
 
-### Prediction
+## Prediction
 
 Using the LMSE criterion, we derive the following function found in literature: 
 
@@ -47,7 +59,7 @@ Using the LMSE criterion, we derive the following function found in literature:
 x_predict = x_mean + (y-y_mean).*xy_var./y_var; 
 ```
 
-### Errors and loss: 
+## Errors and loss: 
 
 The errors are plotted on a histogram which shows the error distribution to be gaussian. The figure is as follows: 
 
